@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DHEEC: EPD Reform in Oregon</title>
+<meta name="description" content="The Oregon Disability Health and Employment Equity Coalition is working to remove the income and asset limits that force Oregonians with disabilities to choose between a career and their health care.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{
+  --fir:#1E4D3B;
+  --fir-lift:#2C6B52;
+  --ink:#16211D;
+  --ink-2:#3A4944;
+  --ink-3:#65736D;
+  --paper:#F3F2EE;
+  --card:#FBFAF7;
+  --line:#D9D7CF;
+  --line-soft:#E7E5DE;
+  --chip:#E8E9E4;
+  --f-display:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --f-body:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+  --wrap:880px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --fir:#7FBFA2;
+    --fir-lift:#A5D6BD;
+    --ink:#E8EDE9;
+    --ink-2:#B4C0BA;
+    --ink-3:#84948C;
+    --paper:#131917;
+    --card:#1B2320;
+    --line:#2E3B36;
+    --line-soft:#252F2B;
+    --chip:#243029;
+  }
+}
+:root[data-theme="dark"]{
+  --fir:#7FBFA2;
+  --fir-lift:#A5D6BD;
+  --ink:#E8EDE9;
+  --ink-2:#B4C0BA;
+  --ink-3:#84948C;
+  --paper:#131917;
+  --card:#1B2320;
+  --line:#2E3B36;
+  --line-soft:#252F2B;
+  --chip:#243029;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--f-body);
+  font-size:17.5px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+a{color:var(--fir);text-decoration-thickness:1px;text-underline-offset:2px}
+a:focus-visible{outline:2px solid var(--fir);outline-offset:2px}
+header.mast{padding:56px 0 40px;border-bottom:1px solid var(--line)}
+.eyebrow{font-family:var(--f-mono);font-size:11.5px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3)}
+h1{font-family:var(--f-display);font-weight:700;font-size:clamp(34px,6vw,54px);line-height:1.04;letter-spacing:-.02em;margin:12px 0 14px;text-wrap:balance}
+.standfirst{font-size:20px;color:var(--ink-2);max-width:36em;margin:0}
+main{padding-bottom:24px}
+section{padding:44px 0 6px}
+h2{font-family:var(--f-display);font-weight:600;font-size:14px;letter-spacing:.15em;text-transform:uppercase;color:var(--fir);margin:0 0 14px}
+p{margin:0 0 16px;max-width:38em}
+.pull{
+  border-left:3px solid var(--fir);
+  padding:6px 0 6px 20px;
+  margin:26px 0;
+  font-family:var(--f-display);
+  font-weight:600;
+  font-size:clamp(19px,2.6vw,23px);
+  line-height:1.35;
+  letter-spacing:-.01em;
+  max-width:32em;
+}
+ul.plain{list-style:none;margin:0 0 16px;padding:0;max-width:40em}
+ul.plain li{padding:12px 0;border-top:1px solid var(--line-soft)}
+ul.plain li:last-child{border-bottom:1px solid var(--line-soft)}
+ul.plain b{font-family:var(--f-display);font-weight:600;font-size:16.5px}
+ul.plain span{display:block;color:var(--ink-2);font-size:16px;margin-top:2px}
+table{border-collapse:collapse;width:100%;margin:6px 0 18px}
+th{text-align:left;font-family:var(--f-mono);font-size:10.5px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3);padding:10px 14px 10px 0;border-bottom:1px solid var(--line)}
+td{padding:12px 14px 12px 0;border-bottom:1px solid var(--line-soft);vertical-align:top;font-size:16.5px}
+td.y{font-family:var(--f-mono);font-size:13.5px;white-space:nowrap;color:var(--ink);font-variant-numeric:tabular-nums}
+td.b{font-family:var(--f-display);font-weight:600;white-space:nowrap}
+.now{
+  background:var(--card);border:1px solid var(--line);border-radius:4px;
+  padding:22px 24px;margin:8px 0 12px;max-width:42em;
+}
+.now .k{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--fir);display:block;margin-bottom:8px}
+.now p:last-child{margin-bottom:0}
+.states{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0 18px;padding:0;list-style:none}
+.states li{
+  font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;
+  background:var(--chip);border:1px solid var(--line);border-radius:3px;
+  padding:5px 10px;color:var(--ink-2);
+}
+.orgs{color:var(--ink-3);font-size:15.5px;max-width:44em}
+footer{border-top:1px solid var(--line);margin-top:48px;padding:28px 0 64px}
+footer p{font-size:14.5px;color:var(--ink-3)}
+.cta{
+  display:inline-block;font-family:var(--f-display);font-weight:600;font-size:16px;
+  background:var(--fir);color:var(--paper);padding:12px 22px;border-radius:4px;
+  text-decoration:none;margin:4px 12px 8px 0;
+}
+.cta:hover{background:var(--fir-lift)}
+.cta:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.cta.ghost{background:transparent;color:var(--fir);border:1px solid var(--fir)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<header class="mast">
+  <div class="wrap">
+    <p class="eyebrow">Oregon Disability Health &amp; Employment Equity Coalition</p>
+    <h1>Work should not cost you your health care.</h1>
+    <p class="standfirst">DHEEC is a statewide coalition working to remove the income and asset limits that force Oregonians with disabilities to choose between a career and the care that keeps them alive.</p>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+<section aria-labelledby="s-problem">
+  <h2 id="s-problem">The problem</h2>
+  <p>Most people with disabilities want to work. Work brings community, purpose, and dignity, the same as it does for everyone else. Oregon's EPD program, Employed Persons with Disabilities, is a Medicaid work incentive meant to make that possible: it lets a person with a disability hold a job while keeping Medicaid coverage for health care and for long term services and supports, the daily in-home care that many people need to get up in the morning and into bed at night.</p>
+  <p>But the program's income and asset limits have not kept up. Under the current rules, a raise, a promotion, or ordinary retirement savings can put a person's eligibility at risk. People turn down advancement, cap their own careers, and keep their assets below limits set decades ago, because losing Medicaid can mean losing the care that makes independent life possible.</p>
+  <p class="pull">The result is a system where the penalty for succeeding at work is losing the support that made work possible.</p>
+</section>
+
+<section aria-labelledby="s-bill">
+  <h2 id="s-bill">The legislation</h2>
+  <p>DHEEC has led the coalition effort behind legislation that removes the income and asset limits for EPD eligibility. In 2025 it was Senate Bill 20: a bill directing the state to provide medical assistance to employed individuals with disabilities regardless of income or resources, with income still considered for cost sharing, so participants contribute as they earn more. The same reform returns in the 2027 session.</p>
+  <ul class="plain">
+    <li><b>Employment without a cliff.</b><span>People keep Medicaid coverage for health care and long term services and supports while they work, earn, and advance.</span></li>
+    <li><b>A fair contribution, not a trap.</b><span>Income can still be considered for cost sharing. The bill replaces an all-or-nothing cutoff with a path where working more never means losing care.</span></li>
+    <li><b>Lower long-term public cost.</b><span>People who can work and keep their benefits rely less on other state and federal programs, are healthier, and contribute to the tax base.</span></li>
+  </ul>
+  <p>Several states have already removed income and resource limits for workers with disabilities:</p>
+  <ul class="states" aria-label="States that have removed income and resource limits">
+    <li>Washington</li><li>Hawaii</li><li>Massachusetts</li><li>Minnesota</li><li>New Jersey</li><li>Rhode Island</li>
+  </ul>
+</section>
+
+<section aria-labelledby="s-history">
+  <h2 id="s-history">The history</h2>
+  <table>
+    <thead><tr><th scope="col">Session</th><th scope="col">Bill</th><th scope="col">Outcome</th></tr></thead>
+    <tbody>
+      <tr><td class="y">2021</td><td class="b">SB 584</td><td>Advanced through committee as A-Engrossed. Did not become law.</td></tr>
+      <tr><td class="y">2023</td><td class="b">EPD reform</td><td>Introduced and advocated through the long session. Did not pass.</td></tr>
+      <tr><td class="y">2025</td><td class="b">SB 20</td><td>Referred to the Joint Committee on Ways and Means, where it remained at the end of session.</td></tr>
+      <tr><td class="y">2027</td><td class="b">Returning</td><td>The concept is with Legislative Counsel and the bill will be introduced for the 2027 session, with chief sponsors committed in both chambers.</td></tr>
+    </tbody>
+  </table>
+  <div class="now">
+    <span class="k">Where things stand</span>
+    <p>The 2027 bill keeps the same language as SB 20. The coalition spent 2026 securing legislative sponsors, endorsements, and partner support, and the bill is on track for early filing ahead of the session that convenes in January 2027.</p>
+  </div>
+</section>
+
+<section aria-labelledby="s-who">
+  <h2 id="s-who">Who we are</h2>
+  <p>The Oregon Disability Health and Employment Equity Coalition brings together people with disabilities, their families, care providers, and advocacy organizations from across the state. Our mission is to make Medicaid, health care, and employment equitable for people with disabilities in Oregon.</p>
+  <p class="orgs">Coalition participants include Disability Rights Oregon, the Oregon State Independent Living Council, the Oregon Disabilities Commission, Disability Services Advisory Councils, the Oregon State Rehabilitation Council, SEIU, the Campaign for Oregon's Seniors and People with Disabilities, Oregon Spinal Cord Injury Connection, the Oregon Consumer League, the Oregon Health Care Association, the Oregon State Council for Retired Citizens, Oregon Self Advocates, and others.</p>
+</section>
+
+<section aria-labelledby="s-join">
+  <h2 id="s-join">Get involved</h2>
+  <p>The bill moves when legislators hear from the people it affects. If you live with a disability and work, want to work, or care for someone who does, your story is the argument.</p>
+  <p>
+    <a class="cta" href="mailto:info@disabilityequitycoalition.org">Email the coalition</a>
+    <a class="cta ghost" href="https://disabilityequitycoalition.org">disabilityequitycoalition.org</a>
+  </p>
+</section>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Published by the Oregon Disability Health and Employment Equity Coalition. Last updated September 18, 2026.</p>
+    <p>SB 20 (2025): <a href="https://olis.oregonlegislature.gov/liz/2025R1/Measures/Overview/SB20">Oregon Legislative Information System</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
